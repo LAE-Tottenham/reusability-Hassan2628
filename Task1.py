@@ -6,34 +6,23 @@
 
 
 ###########################################
-
-def weird_calculation():
+def hyp1(opp1,adj1):
     # get the length and width of the first triangle from the user
-    opp1 = float(input("Enter your first triangle's opposite side length: "))
-    adj1 = float(input("Enter your first triangle's adjacent side length: "))
-
     # work out the hyp
     import math
-    hyp1 = math.sqrt(opp1**2 + adj1**2)
-
+    math.sqrt(opp1**2 + adj1**2)
     # get the length and width of the second triangle from the user
-    opp2 = float(input("Enter your second triangle's opposite side length: "))
-    adj2 = float(input("Enter your second triangle's adjacent side length: "))
-
+def hyp2(opp2,adj2):
     # work out the hyp
-    import math
-    hyp2 = math.sqrt(opp2**2 + adj2**2)
-
+    math.sqrt(opp2**2 + adj2**2)
     # create a third triangle with the hyp1 as the opp and hyp2 as the adj
-    opp3 = hyp1
-    adj3 = hyp2
-    
     import math
-    hyp3 = math.sqrt(opp3**2 + adj3**2)
+    opp3 = hyp1 
+    adj3 = hyp2
+    def hyp3(opp3,adj3):
+        math.sqrt(opp3**2 + adj3**2)
     return hyp3
 
-weird_answer = weird_calculation()
-print(weird_answer)
 
 
 # After you have written the reusable functions, answer the following:
